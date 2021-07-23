@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Italianno&display=swap');
+
+:root {
+  --transluscent-black: rgb(0, 0, 0, .82);
+}
+
+body {
+  /* background-image: url('images/one-piece-food.jpg'); */
+  background-image: url('images/one-piece-food.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.title-container {
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 8em;
+  padding: 30px;
+  padding-bottom: 0;
+  margin: 0;
+  /* background-color: black; */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--transluscent-black);
+  color: white;
+  font-family: 'Italianno', cursive;
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 5em; */
+}
+
+.section-button-container {
+  font-size: 2em;
+  margin: 0px;
+  font-family: 'Allura', cursive;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.section-button:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+.section-button-container-selected {
+  border-bottom: solid 2px white;
+}
+
+.section-button {
+  margin: 5px;
+  padding: 4px;
+  transition: transform .5s ease-out;
+}
+
+/* home section */
+.home-container {
+  font-family: 'Allura', cursive;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  align-items: center;
+  background-color: var(--transluscent-black);
+}
+
+.home-description {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 2em;
+}
+
+.chef-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .chef-container {
+    flex-wrap: wrap;
+  }
+}
+
+.chef-pic {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+/* menu section */
+.menu-container{
+  font-family: 'Allura', cursive;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  align-items: center;
+  background-color: var(--transluscent-black);
+}
