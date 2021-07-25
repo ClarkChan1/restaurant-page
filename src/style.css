@@ -121,6 +121,8 @@ body {
 
 .menu-item-container {
   display: flex;
+  width:100%;
+  justify-content: space-between;
   font-size: var(--normal-font-size);
 }
 
