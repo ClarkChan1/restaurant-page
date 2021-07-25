@@ -114,7 +114,7 @@ body {
   max-width: 800px;
   margin: auto;
   margin-top: 50px;
-  padding: 2em;
+  padding: 5em;
   align-items: center;
   background-color: var(--transluscent-black);
 }
@@ -156,6 +156,11 @@ body {
 @media screen and (max-width: 600px) {
   .chef-container {
     flex-wrap: wrap;
+  }
+
+  .menu-container{
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
   .menu-item-container {
