@@ -2,13 +2,15 @@
 
 :root {
   --transluscent-black: rgb(0, 0, 0, .82);
+  --normal-font-size: 2em;
 }
 
 body {
   /* background-image: url('images/one-piece-food.jpg'); */
-  background-image: url('images/one-piece-food.jpg');
+  background-image: url('images/food.jpg');
   background-size: cover;
   background-attachment: fixed;
+  transition: background-image 1s ease-in;
   margin: 0;
 }
 
@@ -42,7 +44,7 @@ body {
 }
 
 .section-button-container {
-  font-size: 2em;
+  font-size: var(--normal-font-size);
   margin: 0px;
   font-family: 'Allura', cursive;
   padding-left: 20px;
@@ -83,7 +85,7 @@ body {
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
-  font-size: 2em;
+  font-size: var(--normal-font-size);
 }
 
 .chef-container {
@@ -109,7 +111,7 @@ body {
 }
 
 /* menu section */
-.menu-container{
+.menu-container {
   font-family: 'Allura', cursive;
   color: white;
   display: flex;
@@ -121,3 +123,35 @@ body {
   align-items: center;
   background-color: var(--transluscent-black);
 }
+
+.menu-item-container {
+  display: flex;
+  font-size: var(--normal-font-size);
+}
+
+.menu-item-pic {
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+}
+
+.menu-item-description-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em;
+  padding-right: .5em;
+}
+
+.menu-item-title-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-item-title {
+  margin-bottom: 0;
+}
+
+.menu-item-description {}
+
+/* contact section */

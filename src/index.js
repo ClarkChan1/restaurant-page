@@ -2,6 +2,9 @@ import './style.css';
 import createHome from './home.js';
 import createMenu from './menu.js';
 
+import homeBackground from './images/food.jpg';
+import menuBackground from './images/food2.jpg';
+
 let homeContent;
 let menuContent;
 let contactContent;
@@ -63,9 +66,11 @@ function changeSection(newSection, navBar) {
     switch (newSection) {
       case 'home':
         document.body.appendChild(homeContent);
+        document.body.style.backgroundImage = `url(${homeBackground})`;
         break;
       case 'menu':
         document.body.appendChild(menuContent);
+        document.body.style.backgroundImage = `url(${menuBackground})`;
         break;
       case 'contact':
         document.body.appendChild(contactContent);
