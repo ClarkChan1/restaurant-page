@@ -122,7 +122,6 @@ body {
 .menu-item-container {
   display: flex;
   width:100%;
-  justify-content: space-between;
   font-size: var(--normal-font-size);
 }
 
@@ -136,6 +135,7 @@ body {
 .menu-item-description-container {
   display: flex;
   flex-direction: column;
+  width:100%;
   padding-left: 1em;
   padding-right: .5em;
 }
