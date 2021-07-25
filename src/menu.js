@@ -3,7 +3,9 @@ import seafoodRisotto from './images/seafood-risotto.jpg';
 import meatballs from './images/meatballs.jpg';
 import soba from './images/soba-noodles.jpg';
 import meat from './images/meat.png';
+import bento from './images/bento.png';
 import oshiruko from './images/oshiruko.png';
+import aligot from './images/aligot.png';
 import chopper from './images/chopper.png';
 
 function createMenu() {
@@ -12,39 +14,49 @@ function createMenu() {
   // make the array with objects that have the information for each menu item
   let itemArr = [{
     imageUrl: sashimi,
-    itemTitle: "Sashimi",
-    itemPrice: 15.00,
-    itemDescription: "This dish is blah blah blah of the east blue, a classic dish that..."
+    itemTitle: "Sashimi Platter",
+    itemPrice: 18.00,
+    itemDescription: "Bluefin tuna and toro slices, a staple of fine dining."
   }, {
     imageUrl: seafoodRisotto,
     itemTitle: "Seafood Risotto",
     itemPrice: 12.00,
-    itemDescription: "This dish is blah blah blah of the east blue, a classic dish that...This dish is blah blah blah of the east blue, a classic dish that...This dish is blah blah blah of the east blue, a classic dish that..."
+    itemDescription: "Buttery Risotto served with shrimp, octopus, and calamari."
   }, {
     imageUrl: meatballs,
     itemTitle: "Signature Meatballs",
     itemPrice: 15.00,
-    itemDescription: "This dish is blah blah blah of the east blue, a classic dish that..."
+    itemDescription: "One of Sanji's signature dishes. These meatballs are to die for... Literally, Luffy almost died at G5 for these..."
   }, {
     imageUrl: meat,
     itemTitle: "Mystery Meat",
     itemPrice: 10.00,
-    itemDescription: "This dish is blah blah blah of the east blue, a classic dish that..."
+    itemDescription: "Feeling frisky? Try our Mystery Meat, it changes every week!"
   }, {
     imageUrl: soba,
     itemTitle: "Soba Noodles",
     itemPrice: 8.00,
-    itemDescription: "This dish is blah blah blah of the east blue, a classic dish that..."
+    itemDescription: "Sanji served this dish extensively at the land of Wano, totally out of the goodness of his heart and not so he can try and score with the Wano ladies..."
+  }, {
+    imageUrl: bento,
+    itemTitle: "Chef's Choice Bento Box",
+    itemPrice: 25.00,
+    itemDescription: "On the days preceding Sanji and Pudding's wedding, Sanji made this Bento box for Pudding. It is comprised of all of the Straw Hat Pirates' favorite foods."
+  }, {
+    imageUrl: aligot,
+    itemTitle: "Aligot",
+    itemPrice: 16.00,
+    itemDescription: "Thick slices of filet served with potatoes and a delectable, cheesy fondue sauce."
   }, {
     imageUrl: oshiruko,
     itemTitle: "Oshiruko",
     itemPrice: 5.00,
-    itemDescription: "This dish is blah blah blah of the east blue, a classic dish that..."
+    itemDescription: "Red bean soup with mochi cakes. Don't tell Big Mom we serve this..."
   }, {
     imageUrl: chopper,
     itemTitle: "Emergency Rations",
     itemPrice: 5.00,
-    itemDescription: "This dish is blah blah blah of the east blue, a classic dish that..."
+    itemDescription: "In the event of an emergency, Captain Straw Hat Luffy has given us permission to serve Tony Tony Chopper, a memeber of the straw hat crew as an emergency ration..."
   }];
   // loop through all the items in itemArr and create DOM elements for them
   for (let a = 0; a < itemArr.length; a++) {
