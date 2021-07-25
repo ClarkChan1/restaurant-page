@@ -76,7 +76,7 @@ body {
   max-width: 800px;
   margin: auto;
   margin-top: 50px;
-  padding: 20px;
+  padding: 2em;
   align-items: center;
   background-color: var(--transluscent-black);
 }
@@ -96,12 +96,6 @@ body {
   justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-  .chef-container {
-    flex-wrap: wrap;
-  }
-}
-
 .chef-pic {
   border-radius: 50%;
   max-width: 200px;
@@ -116,10 +110,11 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+  gap: 5em;
   max-width: 800px;
   margin: auto;
   margin-top: 50px;
-  padding: 20px;
+  padding: 2em;
   align-items: center;
   background-color: var(--transluscent-black);
 }
@@ -133,6 +128,7 @@ body {
   max-width: 200px;
   max-height: 200px;
   width: 100%;
+  height: 200px;
 }
 
 .menu-item-description-container {
@@ -149,9 +145,22 @@ body {
 }
 
 .menu-item-title {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .menu-item-description {}
 
 /* contact section */
+/* media queries at the end so they have access to all css selectors */
+@media screen and (max-width: 600px) {
+  .chef-container {
+    flex-wrap: wrap;
+  }
+
+  .menu-item-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+}
