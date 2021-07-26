@@ -41,7 +41,7 @@ function createMenu() {
     imageUrl: bento,
     itemTitle: "Chef's Choice Bento Box",
     itemPrice: 25.00,
-    itemDescription: "On the days preceding Sanji and Pudding's wedding, Sanji made this Bento box for Pudding. It is comprised of all of the Straw Hat Pirates' favorite foods."
+    itemDescription: "On one the days preceding Sanji and Pudding's wedding, Sanji made this Bento box for Pudding. It is comprised of all the Straw Hat Pirates' favorite foods."
   }, {
     imageUrl: aligot,
     itemTitle: "Aligot",
@@ -56,7 +56,7 @@ function createMenu() {
     imageUrl: chopper,
     itemTitle: "Emergency Rations",
     itemPrice: 5.00,
-    itemDescription: "In the event of an emergency, Captain Straw Hat Luffy has given us permission to serve Tony Tony Chopper, a memeber of the straw hat crew as an emergency ration..."
+    itemDescription: "In the event of an extreme food shortage, Captain Straw Hat Luffy has given us permission to serve Tony Tony Chopper, a memeber of the straw hat crew as an emergency ration..."
   }];
   // loop through all the items in itemArr and create DOM elements for them
   for (let a = 0; a < itemArr.length; a++) {

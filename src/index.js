@@ -1,9 +1,12 @@
 import './style.css';
 import createHome from './home.js';
 import createMenu from './menu.js';
+import createContact from './contact.js';
 
+// import the image backgrounds for the three sections
 import homeBackground from './images/food.jpg';
 import menuBackground from './images/food2.jpg';
+import contactBackground from './images/eating-together.png';
 
 let homeContent;
 let menuContent;
@@ -74,6 +77,7 @@ function changeSection(newSection, navBar) {
         break;
       case 'contact':
         document.body.appendChild(contactContent);
+        document.body.style.backgroundImage = `url(${contactBackground})`;
         break;
     }
     currentSection = newSection;
@@ -84,6 +88,7 @@ function loadWebsite() {
   createHeader();
   homeContent = createHome();
   menuContent = createMenu();
+  contactContent = createContact();
   // initially display the home section
   document.body.appendChild(homeContent);
   currentSection = "home";

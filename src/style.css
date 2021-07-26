@@ -90,7 +90,6 @@ body {
 
 .chef-container {
   padding-left: 30px;
-  padding-right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +120,7 @@ body {
 
 .menu-item-container {
   display: flex;
-  width:100%;
+  width: 100%;
   font-size: var(--normal-font-size);
 }
 
@@ -135,7 +134,7 @@ body {
 .menu-item-description-container {
   display: flex;
   flex-direction: column;
-  width:100%;
+  width: 100%;
   padding-left: 1em;
   padding-right: .5em;
 }
@@ -154,13 +153,27 @@ body {
 .menu-item-description {}
 
 /* contact section */
+.contact-container {
+  font-family: 'Allura', cursive;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 5em;
+  align-items: center;
+  background-color: var(--transluscent-black);
+}
+
 /* media queries at the end so they have access to all css selectors */
 @media screen and (max-width: 600px) {
   .chef-container {
     flex-wrap: wrap;
   }
 
-  .menu-container{
+  .menu-container {
     padding-left: 2em;
     padding-right: 2em;
   }
@@ -169,5 +182,20 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
+  }
+}
+
+/* make content fade in when section is changed */
+.home-container, .menu-container {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
