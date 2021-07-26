@@ -5,12 +5,12 @@ function createContact() {
   const description = document.createElement('p');
   description.classList.add('contact-description');
   description.appendChild(document.createTextNode('Bring your friends and family along with a healthy appetite and come visit Baratie today! (Customers who were recently starving eat free! Devil Fruit users get a 20% discount if they can swim a lap around Baratie!)'));
-  description.appendChild(document.createElement('hr'));
+  // description.appendChild(document.createElement('hr'));
   // add the phone number
   const phoneNumber = document.createElement('p');
   phoneNumber.classList.add('phone-number');
   phoneNumber.appendChild(document.createTextNode('Phone: 1-800-Team-Sanji'));
-  phoneNumber.appendChild(document.createElement('hr'));
+  // phoneNumber.appendChild(document.createElement('hr'));
   // add the google map location
   const location = document.createElement('iframe');
   location.classList.add('location');
@@ -19,7 +19,9 @@ function createContact() {
   location.loading = "lazy";
   // add all the componenets to contactContainer
   contactContainer.appendChild(description);
+  contactContainer.appendChild(document.createElement('hr'));
   contactContainer.appendChild(phoneNumber);
+  contactContainer.appendChild(document.createElement('hr'));
   contactContainer.appendChild(location);
   return contactContainer;
 }

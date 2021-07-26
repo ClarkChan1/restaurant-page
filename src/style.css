@@ -166,7 +166,7 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  gap:2em;
+  gap:1em;
   max-width: 800px;
   margin: auto;
   margin-top: 50px;
@@ -175,6 +175,10 @@ body {
   background-color: var(--transluscent-black);
   font-size: var(--normal-font-size);
   text-align: center;
+}
+
+.contact-container hr{
+  width:100%;
 }
 
 .contact-description {
