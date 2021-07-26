@@ -25,7 +25,7 @@ function createHome() {
   zeffPic.src = zeff;
   // make the zeff description
   const zeffDescription = document.createElement('p');
-  zeffDescription.classList.add('home-description');
+  zeffDescription.classList.add('chef-description');
   zeffDescription.appendChild(document.createTextNode('Zeff, Head Chef'));
   zeffDescription.appendChild(document.createElement('hr'));
   zeffDescription.appendChild(document.createTextNode("Zeff is the owner of Baratie and has been running the restaurant ever since it's founding in 1776, don't ask him about how he lost his leg, it's a touchy subject."));
@@ -37,7 +37,7 @@ function createHome() {
   sanjiPic.src = sanji;
   // make the sanji description
   const sanjiDescription = document.createElement('p');
-  sanjiDescription.classList.add('home-description');
+  sanjiDescription.classList.add('chef-description');
   sanjiDescription.appendChild(document.createTextNode('Sanji, Sous Chef'));
   sanjiDescription.appendChild(document.createElement('hr'));
   sanjiDescription.appendChild(document.createTextNode("Sanji has been training under Zeff since he was little, he's an excellent cook and was going to inherit the restarurant until Straw Hat Luffy came along..."));
