@@ -29,6 +29,7 @@ function createContact() {
     itemIcon.src = currentItem.imageUrl;
     // make the description of that contact info
     const contactDescription = document.createElement('p');
+    contactDescription.classList.add('contact-description');
     contactDescription.appendChild(document.createTextNode(`${currentItem.description}`));
     // add icon and description to the itemContainer
     itemContainer.appendChild(itemIcon);
