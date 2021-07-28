@@ -10,7 +10,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Kalam', cursive;
-
   transition: background-image 1s ease-in;
   margin: 0;
 }
@@ -183,9 +182,17 @@ body {
   margin: 0;
 }
 
-.phone-number {
+.contact-item-container {
+  display: flex;
+  align-items: center;
   width: 100%;
-  margin: 0;
+  gap:1em;
+}
+
+.contact-item-pic {
+  max-width: 60px;
+  max-height: 60px;
+  width: 100%;
 }
 
 .location {
